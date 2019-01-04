@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.opplysninge.inn</groupId>
     <artifactId>INN-Java-SDK</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>INN-Java-SDK</name>
     <packaging>jar</packaging>
     <url>https://inn-prod-ss.opplysningen.no/innss/</url>
@@ -72,7 +72,7 @@
 
     <properties>
         <service.name>INN-Java-SDK</service.name>
-        <whydah.sdk.version>2.5.4</whydah.sdk.version>
+        <whydah.sdk.version>2.5.9</whydah.sdk.version>
         <additionalparam>-Xdoclint:none</additionalparam>
     </properties>
 
@@ -89,47 +89,7 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>com.github.kevinsawicki</groupId>
-            <artifactId>http-request</artifactId>
-            <version>6.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.netflix.hystrix</groupId>
-            <artifactId>hystrix-core</artifactId>
-            <version>1.5.5</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>org.constretto</groupId>
-            <artifactId>constretto-core</artifactId>
-            <version>2.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.constretto</groupId>
-            <artifactId>constretto-spring</artifactId>
-            <version>2.2.3</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>javax.annotation</groupId>
-                    <artifactId>jsr250-api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
+ 
         <!-- users of library should be able to choose log implementation -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
