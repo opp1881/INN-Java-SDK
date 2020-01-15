@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.opplysninge.inn</groupId>
     <artifactId>INN-Java-SDK</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>INN-Java-SDK</name>
     <packaging>jar</packaging>
     <url>https://inn-prod-ss.opplysningen.no/innss/</url>
@@ -72,7 +72,7 @@
 
     <properties>
         <service.name>INN-Java-SDK</service.name>
-        <whydah.sdk.version>2.5.9</whydah.sdk.version>
+        <whydah.sdk.version>2.5.31</whydah.sdk.version>
         <additionalparam>-Xdoclint:none</additionalparam>
     </properties>
 
