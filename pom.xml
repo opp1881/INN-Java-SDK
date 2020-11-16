@@ -13,6 +13,17 @@
         <version>8</version>
     </parent>
 
+   <properties>
+        <service.name>INN-Java-SDK</service.name>
+        <whydah.sdk.version>2.6.6</whydah.sdk.version>
+        <additionalparam>-Xdoclint:none</additionalparam>
+    </properties>
+
+    <scm>
+        <developerConnection>scm:git:ssh://git@github.com/Opplysningen1881/INN-Java-SDK.git</developerConnection>
+        <connection>scm:git:https://github.com/Opplysningen1881/INN-Java-SDK.git</connection>
+        <url>https://inn-prod-ss.opplysningen.no/innss/</url>
+    </scm>
 
     <developers>
         <developer>
@@ -47,34 +58,7 @@
         </developer>
     </developers>
 
-    <scm>
-        <developerConnection>scm:git:ssh://git@github.com/Opplysningen1881/INN-Java-SDK.git</developerConnection>
-        <connection>scm:git:https://github.com/Opplysningen1881/INN-Java-SDK.git</connection>
-        <url>https://inn-prod-ss.opplysningen.no/innss/</url>
-  </scm>
 
-
-    <repositories>
-        <!-- Needed for parent  -->
-        <repository>
-            <id>cantara-releases</id>
-            <name>Cantara Release Repository</name>
-            <url>https://mvnrepo.cantara.no/content/repositories/releases/</url>
-        </repository>
-        <!-- Needed for SDK snapshots  -->
-        <repository>
-            <id>cantara-snapshots</id>
-            <name>Cantara Snapshot Repository</name>
-            <url>https://mvnrepo.cantara.no/content/repositories/snapshots/</url>
-        </repository>
-    </repositories>
-
-
-    <properties>
-        <service.name>INN-Java-SDK</service.name>
-        <whydah.sdk.version>2.5.42</whydah.sdk.version>
-        <additionalparam>-Xdoclint:none</additionalparam>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -128,4 +112,21 @@
             </plugin>
         </plugins>
     </build>
+    
+    
+    <repositories>
+        <!-- Needed for parent  -->
+        <repository>
+            <id>cantara-releases</id>
+            <name>Cantara Release Repository</name>
+            <url>https://mvnrepo.cantara.no/content/repositories/releases/</url>
+        </repository>
+        <!-- Needed for SDK snapshots  -->
+        <repository>
+            <id>cantara-snapshots</id>
+            <name>Cantara Snapshot Repository</name>
+            <url>https://mvnrepo.cantara.no/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
 </project>
