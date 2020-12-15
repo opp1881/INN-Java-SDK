@@ -15,7 +15,7 @@
 
    <properties>
         <service.name>INN-Java-SDK</service.name>
-        <whydah.sdk.version>2.6.6</whydah.sdk.version>
+        <whydah.sdk.version>2.6.12</whydah.sdk.version>
         <additionalparam>-Xdoclint:none</additionalparam>
     </properties>
 
